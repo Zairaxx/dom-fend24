@@ -46,3 +46,16 @@ names.forEach(name => {
     ul.append(li);
 })
 
+// addEventListener - Logik med knapptryck
+//Skapa knapp
+let button = document.createElement("button");
+button.textContent = "Ändra bakgrundsfärg";
+//Lägg på logik vid knapptryck
+
+button.addEventListener("click", () => {
+    document.body.style.background = "darkgreen"
+})
+
+document.body.append(button);
+
+
